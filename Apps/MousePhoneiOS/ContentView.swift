@@ -8,20 +8,13 @@ struct ContentView: View {
         VStack(spacing: 0) {
             header
 
-            Group {
-                switch model.inputMode {
-                case .touchpad:
-                    TouchpadView(
-                        sensitivity: model.sensitivity,
-                        onMove: model.sendPointerMove(dx:dy:),
-                        onClick: { model.sendClick(button: .left) },
-                        onRightClick: { model.sendClick(button: .right) },
-                        onScroll: model.sendScroll(dx:dy:)
-                    )
-                case .air:
-                    AirMouseView()
-                }
-            }
+            TouchpadView(
+                sensitivity: model.sensitivity,
+                onMove: model.sendPointerMove(dx:dy:),
+                onClick: { model.sendClick(button: .left) },
+                onRightClick: { model.sendClick(button: .right) },
+                onScroll: model.sendScroll(dx:dy:)
+            )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(Color(.systemBackground))
@@ -59,44 +52,9 @@ struct ContentView: View {
                     .font(.system(.footnote, design: .monospaced))
                     .frame(width: 32, alignment: .trailing)
             }
-
-            Picker("Input Mode", selection: $model.inputMode) {
-                ForEach(PhoneControllerModel.InputMode.allCases) { mode in
-                    Text(mode.title).tag(mode)
-                }
-            }
-            .pickerStyle(.segmented)
         }
         .padding()
         .background(.thinMaterial)
-    }
-}
-
-struct AirMouseView: View {
-    var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 24, style: .continuous)
-                .fill(Color(.secondarySystemBackground))
-                .padding()
-
-            VStack(spacing: 18) {
-                Image(systemName: "gyroscope")
-                    .font(.system(size: 54, weight: .light))
-                    .foregroundStyle(.secondary)
-                Text("Air Mouse")
-                    .font(.headline)
-                    .foregroundStyle(.secondary)
-                Text("Move your iPhone in the air to steer the cursor")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 24)
-            }
-            .allowsHitTesting(false)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .contentShape(Rectangle())
-        .ignoresSafeArea(edges: .bottom)
     }
 }
 
@@ -249,34 +207,7 @@ final class TrackpadUIView: UIView {
 
 @MainActor
 final class PhoneControllerModel: ObservableObject {
-    enum InputMode: String, CaseIterable, Identifiable {
-        case touchpad
-        case air
-
-        var id: String { rawValue }
-
-        var title: String {
-            switch self {
-            case .touchpad:
-                return "Touchpad"
-            case .air:
-                return "Air Mouse"
-            }
-        }
-    }
-
-    @Published var sensitivity = 1.2 {
-        didSet {
-            if inputMode == .air {
-                airMouseController.sensitivity = sensitivity
-            }
-        }
-    }
-    @Published var inputMode: InputMode = .touchpad {
-        didSet {
-            updateInputMode(previous: oldValue)
-        }
-    }
+    @Published var sensitivity = 1.2
     @Published private(set) var statusText = "Searching for Mac"
     @Published private(set) var isRunning = false
 
@@ -288,7 +219,6 @@ final class PhoneControllerModel: ObservableObject {
         }
         return transport
     }()
-    private let airMouseController = AirMouseController()
     private lazy var volumeObserver = VolumeButtonObserver { [weak self] delta in
         self?.transport.send(.volume(delta: delta))
     }
@@ -298,7 +228,6 @@ final class PhoneControllerModel: ObservableObject {
         isRunning = true
         transport.start()
         volumeObserver.start()
-        updateInputMode(previous: inputMode)
     }
 
     func toggleConnection() {
@@ -309,7 +238,6 @@ final class PhoneControllerModel: ObservableObject {
         isRunning = false
         transport.stop()
         volumeObserver.stop()
-        airMouseController.stop()
     }
 
     func sendPointerMove(dx: Double, dy: Double) {
@@ -322,20 +250,6 @@ final class PhoneControllerModel: ObservableObject {
 
     func sendScroll(dx: Double, dy: Double) {
         transport.send(.scroll(dx: dx, dy: dy))
-    }
-
-    private func updateInputMode(previous: InputMode) {
-        guard isRunning else { return }
-        if previous == .air {
-            airMouseController.stop()
-        }
-
-        guard inputMode == .air else { return }
-        airMouseController.sensitivity = sensitivity
-        airMouseController.onMove = { [weak self] dx, dy in
-            self?.sendPointerMove(dx: dx, dy: dy)
-        }
-        airMouseController.start()
     }
 
     private func handleStateChange(_ state: TransportConnectionState) {
