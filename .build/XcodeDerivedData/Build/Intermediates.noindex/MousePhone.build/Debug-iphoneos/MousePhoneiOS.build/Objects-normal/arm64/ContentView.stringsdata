@@ -1,0 +1,40 @@
+{
+  "source": "/Users/seifshawky/seif_projects/Mouse_Proj/Apps/MousePhoneiOS/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Stop connection",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start connection",
+        "location": {
+          "startingColumn": 75,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "MousePhone",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Touchpad",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 84
+        }
+      }
+    ]
+  },
+  "version": 1
+}

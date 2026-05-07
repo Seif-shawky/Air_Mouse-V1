@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>25B78</string>
+	<key>CFBundleDisplayName</key>
+	<string>MousePhone Mac</string>
+	<key>CFBundleExecutable</key>
+	<string>MousePhoneMac</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.seif.mousephone.mac</string>
+	<key>CFBundleName</key>
+	<string>MousePhoneMac</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>25B74</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>26.1</string>
+	<key>DTSDKBuild</key>
+	<string>25B74</string>
+	<key>DTSDKName</key>
+	<string>macosx26.1</string>
+	<key>DTXcode</key>
+	<string>2611</string>
+	<key>DTXcodeBuild</key>
+	<string>17B100</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>15.0</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>MousePhone uses Apple Events to change the Mac system volume.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_mousephone._tcp</string>
+		<string>_mousephone._udp</string>
+	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>MousePhone uses your local network to connect to your iPhone.</string>
+</dict>
+</plist>

@@ -1,0 +1,19 @@
+{
+  "": {
+    "swift-dependencies": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/master.swiftdeps"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/ControlMessage.swift": {
+    "dependencies": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/ControlMessage.d",
+    "object": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/ControlMessage.swift.o",
+    "swiftmodule": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/ControlMessage~partial.swiftmodule",
+    "swift-dependencies": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/ControlMessage.swiftdeps",
+    "diagnostics": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/ControlMessage.dia"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/Transport.swift": {
+    "dependencies": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/Transport.d",
+    "object": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/Transport.swift.o",
+    "swiftmodule": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/Transport~partial.swiftmodule",
+    "swift-dependencies": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/Transport.swiftdeps",
+    "diagnostics": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/Transport.dia"
+  }
+}

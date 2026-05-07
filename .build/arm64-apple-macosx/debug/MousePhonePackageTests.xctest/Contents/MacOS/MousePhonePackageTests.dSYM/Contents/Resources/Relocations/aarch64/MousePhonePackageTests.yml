@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.xctest/Contents/MacOS/MousePhonePackageTests'
+relocations:     []
+...

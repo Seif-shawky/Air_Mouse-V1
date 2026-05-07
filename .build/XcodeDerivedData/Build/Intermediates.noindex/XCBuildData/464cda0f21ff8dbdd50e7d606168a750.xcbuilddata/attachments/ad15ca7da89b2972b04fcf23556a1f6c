@@ -1,0 +1,69 @@
+{
+  "" : {
+    "diagnostics" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOS-primary.dia",
+    "emit-module-dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOS-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOS-primary-emit-module.dia",
+    "pch" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOS-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOS-primary.swiftdeps"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Apps/MousePhoneiOS/ContentView.swift" : {
+    "const-values" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Apps/MousePhoneiOS/MousePhoneiOSApp.swift" : {
+    "const-values" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOSApp.swiftconstvalues",
+    "dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOSApp.d",
+    "diagnostics" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOSApp.dia",
+    "index-unit-output-path" : "/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOSApp.o",
+    "llvm-bc" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOSApp.bc",
+    "object" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOSApp.o",
+    "swift-dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOSApp.swiftdeps",
+    "swiftmodule" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MousePhoneiOSApp~partial.swiftmodule"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Apps/MousePhoneiOS/MultipeerControllerTransport.swift" : {
+    "const-values" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MultipeerControllerTransport.swiftconstvalues",
+    "dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MultipeerControllerTransport.d",
+    "diagnostics" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MultipeerControllerTransport.dia",
+    "index-unit-output-path" : "/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MultipeerControllerTransport.o",
+    "llvm-bc" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MultipeerControllerTransport.bc",
+    "object" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MultipeerControllerTransport.o",
+    "swift-dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MultipeerControllerTransport.swiftdeps",
+    "swiftmodule" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/MultipeerControllerTransport~partial.swiftmodule"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Apps/MousePhoneiOS/VolumeButtonObserver.swift" : {
+    "const-values" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/VolumeButtonObserver.swiftconstvalues",
+    "dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/VolumeButtonObserver.d",
+    "diagnostics" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/VolumeButtonObserver.dia",
+    "index-unit-output-path" : "/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/VolumeButtonObserver.o",
+    "llvm-bc" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/VolumeButtonObserver.bc",
+    "object" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/VolumeButtonObserver.o",
+    "swift-dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/VolumeButtonObserver.swiftdeps",
+    "swiftmodule" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/VolumeButtonObserver~partial.swiftmodule"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/ControlMessage.swift" : {
+    "const-values" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ControlMessage.swiftconstvalues",
+    "dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ControlMessage.d",
+    "diagnostics" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ControlMessage.dia",
+    "index-unit-output-path" : "/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ControlMessage.o",
+    "llvm-bc" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ControlMessage.bc",
+    "object" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ControlMessage.o",
+    "swift-dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ControlMessage.swiftdeps",
+    "swiftmodule" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/ControlMessage~partial.swiftmodule"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/Transport.swift" : {
+    "const-values" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/Transport.swiftconstvalues",
+    "dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/Transport.d",
+    "diagnostics" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/Transport.dia",
+    "index-unit-output-path" : "/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/Transport.o",
+    "llvm-bc" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/Transport.bc",
+    "object" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/Transport.o",
+    "swift-dependencies" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/Transport.swiftdeps",
+    "swiftmodule" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/MousePhone.build/Debug-iphoneos/MousePhoneiOS.build/Objects-normal/arm64/Transport~partial.swiftmodule"
+  }
+}

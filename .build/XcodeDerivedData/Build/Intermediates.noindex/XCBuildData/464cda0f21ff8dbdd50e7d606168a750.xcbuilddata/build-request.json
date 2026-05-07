@@ -1,0 +1,72 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "8a1411b9fe9397830dde9530000d0bd4941d8faee7a9fe260ae8033368e2ab82"
+    }
+  ],
+  "containerPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/MousePhone.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "undefined_arch",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos26.1",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "undefined_arch"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Products",
+      "derivedDataPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData",
+      "indexDataStoreFolderPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "CODE_SIGNING_ALLOWED" : "NO"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "COLOR_DIAGNOSTICS" : "YES",
+          "diagnostic_message_length" : "100",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

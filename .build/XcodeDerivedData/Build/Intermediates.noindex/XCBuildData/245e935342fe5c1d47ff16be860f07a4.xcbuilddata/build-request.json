@@ -1,0 +1,64 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "8a1411b9fe9397830dde9530000d0bd4932c492724929dff532f3029a340b4f3"
+    }
+  ],
+  "containerPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/MousePhone.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx26.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Products",
+      "derivedDataPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData",
+      "indexDataStoreFolderPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "CODE_SIGNING_ALLOWED" : "NO"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

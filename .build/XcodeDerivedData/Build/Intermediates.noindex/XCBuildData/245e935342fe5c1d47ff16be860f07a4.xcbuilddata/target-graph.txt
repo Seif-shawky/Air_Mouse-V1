@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Target 'MousePhoneMac' in project 'MousePhone' (no dependencies)

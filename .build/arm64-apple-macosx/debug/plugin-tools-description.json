@@ -1,0 +1,657 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.xctest/Contents/MacOS/MousePhonePackageTests",
+      "packagePath" : "/Users/seifshawky/seif_projects/Mouse_Proj",
+      "productName" : "MousePhonePackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MousePhonePackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/sources",
+      "importPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules/MousePhoneSharedTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MousePhonePackageTests",
+      "moduleOutputPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules/MousePhonePackageTests.swiftmodule",
+      "objects" : [
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx15.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/include/MousePhonePackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mouse_proj"
+      ],
+      "outputFileMapPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules/MousePhonePackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MousePhoneShared-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/sources",
+      "importPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/ControlMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/Transport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MousePhoneShared",
+      "moduleOutputPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules/MousePhoneShared.swiftmodule",
+      "objects" : [
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/ControlMessage.swift.o",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/Transport.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx15.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/include/MousePhoneShared-Swift.h",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mouse_proj"
+      ],
+      "outputFileMapPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/ControlMessage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/Transport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules/MousePhoneShared.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/ControlMessage.swift",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/Transport.swift"
+      ],
+      "tempsPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MousePhoneSharedTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/sources",
+      "importPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/Tests/MousePhoneSharedTests/ControlMessageTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules/MousePhoneShared.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MousePhoneSharedTests",
+      "moduleOutputPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules/MousePhoneSharedTests.swiftmodule",
+      "objects" : [
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/ControlMessageTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx15.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mouse_proj"
+      ],
+      "outputFileMapPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/ControlMessageTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules/MousePhoneSharedTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/seifshawky/seif_projects/Mouse_Proj/Tests/MousePhoneSharedTests/ControlMessageTests.swift"
+      ],
+      "tempsPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MousePhonePackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MousePhonePackageTests",
+      "-package-name",
+      "mouse_proj",
+      "-c",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.derived/runner.swift",
+      "-I",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx15.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/include/MousePhonePackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mouse_proj",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "MousePhoneShared" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MousePhoneShared",
+      "-package-name",
+      "mouse_proj",
+      "-c",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/ControlMessage.swift",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/Transport.swift",
+      "-I",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx15.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/include/MousePhoneShared-Swift.h",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mouse_proj",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "MousePhoneSharedTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MousePhoneSharedTests",
+      "-package-name",
+      "mouse_proj",
+      "-c",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/Tests/MousePhoneSharedTests/ControlMessageTests.swift",
+      "-I",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx15.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mouse_proj",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MousePhonePackageTests" : [
+      "MousePhoneSharedTests",
+      "MousePhoneShared"
+    ],
+    "MousePhoneShared" : [
+
+    ],
+    "MousePhoneSharedTests" : [
+      "MousePhoneShared"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/sources"
+    },
+    "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/ControlMessage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/Transport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/ControlMessageTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhonePackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/ControlMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/Sources/MousePhoneShared/Transport.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneShared.build/sources"
+    },
+    "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/seifshawky/seif_projects/Mouse_Proj/Tests/MousePhoneSharedTests/ControlMessageTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/sources"
+    },
+    "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

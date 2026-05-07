@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/master.swiftdeps"
+  },
+  "/Users/seifshawky/seif_projects/Mouse_Proj/Tests/MousePhoneSharedTests/ControlMessageTests.swift": {
+    "dependencies": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/ControlMessageTests.d",
+    "object": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/ControlMessageTests.swift.o",
+    "swiftmodule": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/ControlMessageTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/ControlMessageTests.swiftdeps",
+    "diagnostics": "/Users/seifshawky/seif_projects/Mouse_Proj/.build/arm64-apple-macosx/debug/MousePhoneSharedTests.build/ControlMessageTests.dia"
+  }
+}

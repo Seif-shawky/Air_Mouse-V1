@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleDisplayName</key>
+	<string>MousePhone Mac</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>MousePhone uses your local network to connect to your iPhone.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_mousephone._tcp</string>
+		<string>_mousephone._udp</string>
+	</array>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>MousePhone uses Apple Events to change the Mac system volume.</string>
+</dict>
+</plist>

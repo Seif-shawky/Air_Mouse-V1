@@ -1,0 +1,72 @@
+{
+  "source": "/Users/seifshawky/seif_projects/Mouse_Proj/Apps/MousePhoneMac/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "MousePhone",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Accessibility Permission Prompt",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pairing Code",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Input",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Test Cursor Move",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stop Receiver",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start Receiver",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh Permission",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 58
+        }
+      }
+    ]
+  },
+  "version": 1
+}

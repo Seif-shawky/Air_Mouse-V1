@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* MousePhoneMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* MousePhoneMacApp.swift */; };
+		100000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* ContentView.swift */; };
+		100000000000000000000003 /* MultipeerReceiverTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* MultipeerReceiverTransport.swift */; };
+		100000000000000000000004 /* MacInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* MacInputController.swift */; };
+		100000000000000000000005 /* AccessibilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* AccessibilityController.swift */; };
+		100000000000000000000006 /* ControlMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000011 /* ControlMessage.swift */; };
+		100000000000000000000007 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* Transport.swift */; };
+		100000000000000000000008 /* MousePhoneiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000021 /* MousePhoneiOSApp.swift */; };
+		100000000000000000000009 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000022 /* ContentView.swift */; };
+		10000000000000000000000A /* MultipeerControllerTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000023 /* MultipeerControllerTransport.swift */; };
+		10000000000000000000000B /* VolumeButtonObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000024 /* VolumeButtonObserver.swift */; };
+		10000000000000000000000C /* ControlMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000011 /* ControlMessage.swift */; };
+		10000000000000000000000D /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* Transport.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* MousePhoneMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousePhoneMacApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* MultipeerReceiverTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerReceiverTransport.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* MacInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacInputController.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* AccessibilityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityController.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000011 /* ControlMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlMessage.swift; sourceTree = "<group>"; };
+		200000000000000000000012 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		200000000000000000000021 /* MousePhoneiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousePhoneiOSApp.swift; sourceTree = "<group>"; };
+		200000000000000000000022 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		200000000000000000000023 /* MultipeerControllerTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerControllerTransport.swift; sourceTree = "<group>"; };
+		200000000000000000000024 /* VolumeButtonObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeButtonObserver.swift; sourceTree = "<group>"; };
+		200000000000000000000025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000031 /* MousePhoneMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MousePhoneMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200000000000000000000032 /* MousePhoneiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MousePhoneiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000002 /* Apps */,
+				400000000000000000000005 /* Sources */,
+				400000000000000000000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		400000000000000000000002 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000003 /* MousePhoneMac */,
+				400000000000000000000004 /* MousePhoneiOS */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		400000000000000000000003 /* MousePhoneMac */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* MousePhoneMacApp.swift */,
+				200000000000000000000002 /* ContentView.swift */,
+				200000000000000000000003 /* MultipeerReceiverTransport.swift */,
+				200000000000000000000004 /* MacInputController.swift */,
+				200000000000000000000005 /* AccessibilityController.swift */,
+				200000000000000000000006 /* Info.plist */,
+			);
+			path = MousePhoneMac;
+			sourceTree = "<group>";
+		};
+		400000000000000000000004 /* MousePhoneiOS */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000021 /* MousePhoneiOSApp.swift */,
+				200000000000000000000022 /* ContentView.swift */,
+				200000000000000000000023 /* MultipeerControllerTransport.swift */,
+				200000000000000000000024 /* VolumeButtonObserver.swift */,
+				200000000000000000000025 /* Info.plist */,
+			);
+			path = MousePhoneiOS;
+			sourceTree = "<group>";
+		};
+		400000000000000000000005 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000007 /* MousePhoneShared */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		400000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000031 /* MousePhoneMac.app */,
+				200000000000000000000032 /* MousePhoneiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		400000000000000000000007 /* MousePhoneShared */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000011 /* ControlMessage.swift */,
+				200000000000000000000012 /* Transport.swift */,
+			);
+			path = MousePhoneShared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* MousePhoneMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600000000000000000000003 /* Build configuration list for PBXNativeTarget "MousePhoneMac" */;
+			buildPhases = (
+				700000000000000000000001 /* Sources */,
+				300000000000000000000001 /* Frameworks */,
+				800000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MousePhoneMac;
+			productName = MousePhoneMac;
+			productReference = 200000000000000000000031 /* MousePhoneMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* MousePhoneiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600000000000000000000004 /* Build configuration list for PBXNativeTarget "MousePhoneiOS" */;
+			buildPhases = (
+				700000000000000000000002 /* Sources */,
+				300000000000000000000002 /* Frameworks */,
+				800000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MousePhoneiOS;
+			productName = MousePhoneiOS;
+			productReference = 200000000000000000000032 /* MousePhoneiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					500000000000000000000001 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					500000000000000000000002 = {
+						CreatedOnToolsVersion = 26.1.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 600000000000000000000001 /* Build configuration list for PBXProject "MousePhone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 400000000000000000000001;
+			productRefGroup = 400000000000000000000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500000000000000000000001 /* MousePhoneMac */,
+				500000000000000000000002 /* MousePhoneiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		800000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		700000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* MousePhoneMacApp.swift in Sources */,
+				100000000000000000000002 /* ContentView.swift in Sources */,
+				100000000000000000000003 /* MultipeerReceiverTransport.swift in Sources */,
+				100000000000000000000004 /* MacInputController.swift in Sources */,
+				100000000000000000000005 /* AccessibilityController.swift in Sources */,
+				100000000000000000000006 /* ControlMessage.swift in Sources */,
+				100000000000000000000007 /* Transport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000008 /* MousePhoneiOSApp.swift in Sources */,
+				100000000000000000000009 /* ContentView.swift in Sources */,
+				10000000000000000000000A /* MultipeerControllerTransport.swift in Sources */,
+				10000000000000000000000B /* VolumeButtonObserver.swift in Sources */,
+				10000000000000000000000C /* ControlMessage.swift in Sources */,
+				10000000000000000000000D /* Transport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		610000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = auto;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		610000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = auto;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		610000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RHM6T24HH7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/MousePhoneMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seif.mousephone.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		610000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RHM6T24HH7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/MousePhoneMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seif.mousephone.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		610000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RHM6T24HH7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/MousePhoneiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seif.mousephone.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		610000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RHM6T24HH7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/MousePhoneiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seif.mousephone.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		600000000000000000000001 /* Build configuration list for PBXProject "MousePhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610000000000000000000001 /* Debug */,
+				610000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600000000000000000000003 /* Build configuration list for PBXNativeTarget "MousePhoneMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610000000000000000000003 /* Debug */,
+				610000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600000000000000000000004 /* Build configuration list for PBXNativeTarget "MousePhoneiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610000000000000000000005 /* Debug */,
+				610000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 900000000000000000000001 /* Project object */;
+}

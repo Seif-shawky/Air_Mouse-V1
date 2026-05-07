@@ -1,0 +1,64 @@
+{
+  "source": "/Users/seifshawky/seif_projects/Mouse_Proj/Apps/MousePhoneMac/MousePhoneMacApp.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "MousePhone",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 8
+        }
+      },
+      {
+        "comment": "",
+        "key": "MousePhone",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 12
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open MousePhone",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Test Cursor Move",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Request Accessibility Access",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stop Receiver",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start Receiver",
+        "location": {
+          "startingColumn": 52,
+          "startingLine": 42
+        }
+      }
+    ]
+  },
+  "version": 1
+}
