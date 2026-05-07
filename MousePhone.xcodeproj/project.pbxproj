@@ -20,6 +20,7 @@
 		10000000000000000000000B /* VolumeButtonObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000024 /* VolumeButtonObserver.swift */; };
 		10000000000000000000000C /* ControlMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000011 /* ControlMessage.swift */; };
 		10000000000000000000000D /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* Transport.swift */; };
+		10000000000000000000000E /* AirMouseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000026 /* AirMouseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		200000000000000000000023 /* MultipeerControllerTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerControllerTransport.swift; sourceTree = "<group>"; };
 		200000000000000000000024 /* VolumeButtonObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeButtonObserver.swift; sourceTree = "<group>"; };
 		200000000000000000000025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000026 /* AirMouseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirMouseController.swift; sourceTree = "<group>"; };
 		200000000000000000000031 /* MousePhoneMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MousePhoneMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		200000000000000000000032 /* MousePhoneiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MousePhoneiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 			children = (
 				200000000000000000000021 /* MousePhoneiOSApp.swift */,
 				200000000000000000000022 /* ContentView.swift */,
+				200000000000000000000026 /* AirMouseController.swift */,
 				200000000000000000000023 /* MultipeerControllerTransport.swift */,
 				200000000000000000000024 /* VolumeButtonObserver.swift */,
 				200000000000000000000025 /* Info.plist */,
@@ -240,6 +243,7 @@
 			files = (
 				100000000000000000000008 /* MousePhoneiOSApp.swift in Sources */,
 				100000000000000000000009 /* ContentView.swift in Sources */,
+				10000000000000000000000E /* AirMouseController.swift in Sources */,
 				10000000000000000000000A /* MultipeerControllerTransport.swift in Sources */,
 				10000000000000000000000B /* VolumeButtonObserver.swift in Sources */,
 				10000000000000000000000C /* ControlMessage.swift in Sources */,
