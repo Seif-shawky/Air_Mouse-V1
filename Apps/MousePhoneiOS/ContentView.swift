@@ -1,5 +1,22 @@
 import SwiftUI
 import UIKit
+import CoreMotion
+
+enum ControllerInputMode: String, CaseIterable, Identifiable {
+    case touchpad
+    case airMouse
+
+    var id: String { rawValue }
+
+    var title: String {
+        switch self {
+        case .touchpad:
+            "Touchpad"
+        case .airMouse:
+            "Air Mouse"
+        }
+    }
+}
 
 struct ContentView: View {
     @EnvironmentObject private var model: PhoneControllerModel
@@ -8,18 +25,34 @@ struct ContentView: View {
         VStack(spacing: 0) {
             header
 
-            TouchpadView(
-                sensitivity: model.sensitivity,
-                onMove: model.sendPointerMove(dx:dy:),
-                onClick: { model.sendClick(button: .left) },
-                onRightClick: { model.sendClick(button: .right) },
-                onScroll: model.sendScroll(dx:dy:)
-            )
+            Group {
+                switch model.inputMode {
+                case .touchpad:
+                    TouchpadView(
+                        sensitivity: model.sensitivity,
+                        onMove: model.sendPointerMove(dx:dy:),
+                        onClick: { model.sendClick(button: .left) },
+                        onRightClick: { model.sendClick(button: .right) },
+                        onScroll: model.sendScroll(dx:dy:)
+                    )
+                case .airMouse:
+                    AirMouseView(
+                        statusText: model.airMouseStatusText,
+                        onCalibrate: model.calibrateAirMouse,
+                        onLeftClick: { model.sendClick(button: .left) },
+                        onRightClick: { model.sendClick(button: .right) }
+                    )
+                }
+            }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(Color(.systemBackground))
         .onAppear {
             model.start()
+            model.updateMotionCapture()
+        }
+        .onDisappear {
+            model.stopMotionCapture()
         }
     }
 
@@ -45,8 +78,15 @@ struct ContentView: View {
                 .accessibilityLabel(model.isRunning ? "Stop connection" : "Start connection")
             }
 
+            Picker("Input mode", selection: $model.inputMode) {
+                ForEach(ControllerInputMode.allCases) { mode in
+                    Text(mode.title).tag(mode)
+                }
+            }
+            .pickerStyle(.segmented)
+
             HStack {
-                Image(systemName: "cursorarrow.motionlines")
+                Image(systemName: model.inputMode == .airMouse ? "gyroscope" : "cursorarrow.motionlines")
                 Slider(value: $model.sensitivity, in: 0.5...3.0)
                 Text(model.sensitivity, format: .number.precision(.fractionLength(1)))
                     .font(.system(.footnote, design: .monospaced))
@@ -55,6 +95,60 @@ struct ContentView: View {
         }
         .padding()
         .background(.thinMaterial)
+    }
+}
+
+struct AirMouseView: View {
+    let statusText: String
+    let onCalibrate: () -> Void
+    let onLeftClick: () -> Void
+    let onRightClick: () -> Void
+
+    var body: some View {
+        VStack(spacing: 28) {
+            Spacer()
+
+            VStack(spacing: 18) {
+                Image(systemName: "gyroscope")
+                    .font(.system(size: 58, weight: .light))
+                    .foregroundStyle(.secondary)
+                Text("Air Mouse")
+                    .font(.headline)
+                    .foregroundStyle(.secondary)
+                Text(statusText)
+                    .font(.footnote)
+                    .foregroundStyle(.tertiary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+            }
+
+            Button(action: onCalibrate) {
+                Label("Calibrate", systemImage: "scope")
+                    .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.bordered)
+            .padding(.horizontal)
+
+            HStack(spacing: 14) {
+                Button(action: onLeftClick) {
+                    Label("Left Click", systemImage: "cursorarrow.click")
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+
+                Button(action: onRightClick) {
+                    Label("Right Click", systemImage: "contextualmenu.and.cursorarrow")
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.bordered)
+            }
+            .padding(.horizontal)
+
+            Spacer()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.secondarySystemBackground))
+        .ignoresSafeArea(edges: .bottom)
     }
 }
 
@@ -208,10 +302,27 @@ final class TrackpadUIView: UIView {
 @MainActor
 final class PhoneControllerModel: ObservableObject {
     @Published var sensitivity = 1.2
+    @Published var inputMode: ControllerInputMode = .touchpad {
+        didSet {
+            updateMotionCapture()
+        }
+    }
     @Published private(set) var statusText = "Searching for Mac"
+    @Published private(set) var airMouseStatusText = "Point your iPhone like a remote"
     @Published private(set) var isRunning = false
 
     private let pairingCode = "000000"
+    private let motionManager = CMMotionManager()
+    private let airMouseDeadzone = 0.008
+    private let airMouseSendInterval = 1.0 / 20.0
+    private let maxAirMouseStep = 420.0
+    private let airMouseGain = 18_000.0
+    private let airMouseSmoothing = 0.45
+    private var latestAttitude: CMAttitude?
+    private var referenceAttitude: CMAttitude?
+    private var airMouseSendTimer: Timer?
+    private var smoothedAirMouseDX = 0.0
+    private var smoothedAirMouseDY = 0.0
     private lazy var transport: MultipeerControllerTransport = {
         let transport = MultipeerControllerTransport(pairingCode: pairingCode)
         transport.onStateChange = { [weak self] state in
@@ -228,6 +339,7 @@ final class PhoneControllerModel: ObservableObject {
         isRunning = true
         transport.start()
         volumeObserver.start()
+        updateMotionCapture()
     }
 
     func toggleConnection() {
@@ -238,18 +350,120 @@ final class PhoneControllerModel: ObservableObject {
         isRunning = false
         transport.stop()
         volumeObserver.stop()
+        stopMotionCapture()
     }
 
     func sendPointerMove(dx: Double, dy: Double) {
         transport.send(.pointerMove(dx: dx, dy: dy))
     }
 
+    func sendAirMouseMove(dx: Double, dy: Double) {
+        transport.send(.airMouseMove(dx: dx, dy: dy))
+    }
+
     func sendClick(button: PointerButton) {
-        transport.send(.click(button: button, phase: .single))
+        transport.sendReliably(.click(button: button, phase: .single))
     }
 
     func sendScroll(dx: Double, dy: Double) {
         transport.send(.scroll(dx: dx, dy: dy))
+    }
+
+    func calibrateAirMouse() {
+        guard let latestAttitude else {
+            airMouseStatusText = "Hold still for a moment"
+            return
+        }
+
+        referenceAttitude = latestAttitude.copy() as? CMAttitude
+        airMouseStatusText = "Calibrated"
+    }
+
+    func updateMotionCapture() {
+        guard isRunning, inputMode == .airMouse else {
+            stopMotionCapture()
+            return
+        }
+
+        guard motionManager.isDeviceMotionAvailable else {
+            airMouseStatusText = "Motion sensors are unavailable"
+            return
+        }
+
+        startAirMouseSendTimer()
+
+        if !motionManager.isDeviceMotionActive {
+            airMouseStatusText = "Move the iPhone through the air"
+            motionManager.deviceMotionUpdateInterval = 1.0 / 30.0
+            motionManager.startDeviceMotionUpdates(to: .main) { [weak self] motion, _ in
+                guard let self, let motion else { return }
+                self.handleMotionUpdate(motion)
+            }
+        }
+    }
+
+    func stopMotionCapture() {
+        airMouseSendTimer?.invalidate()
+        airMouseSendTimer = nil
+
+        if motionManager.isDeviceMotionActive {
+            motionManager.stopDeviceMotionUpdates()
+        }
+
+        latestAttitude = nil
+        referenceAttitude = nil
+        smoothedAirMouseDX = 0
+        smoothedAirMouseDY = 0
+        airMouseStatusText = "Point your iPhone like a remote"
+    }
+
+    private func handleMotionUpdate(_ motion: CMDeviceMotion) {
+        latestAttitude = motion.attitude.copy() as? CMAttitude
+        guard let latestAttitude else { return }
+
+        if referenceAttitude == nil {
+            referenceAttitude = latestAttitude.copy() as? CMAttitude
+            airMouseStatusText = "Calibrated"
+        }
+
+        guard let referenceAttitude else { return }
+
+        let relative = latestAttitude.copy() as? CMAttitude
+        relative?.multiply(byInverseOf: referenceAttitude)
+
+        guard let relative else { return }
+        let rawDX = -relative.yaw
+        let rawDY = -relative.pitch
+
+        guard abs(rawDX) > airMouseDeadzone || abs(rawDY) > airMouseDeadzone else {
+            smoothedAirMouseDX *= 0.55
+            smoothedAirMouseDY *= 0.55
+            return
+        }
+
+        let gain = airMouseGain * sensitivity * airMouseSendInterval
+        let targetDX = rawDX.removingDeadzone(airMouseDeadzone) * gain
+        let targetDY = rawDY.removingDeadzone(airMouseDeadzone) * gain
+        smoothedAirMouseDX += (targetDX - smoothedAirMouseDX) * airMouseSmoothing
+        smoothedAirMouseDY += (targetDY - smoothedAirMouseDY) * airMouseSmoothing
+    }
+
+    private func startAirMouseSendTimer() {
+        guard airMouseSendTimer == nil else { return }
+
+        airMouseSendTimer = Timer.scheduledTimer(withTimeInterval: airMouseSendInterval, repeats: true) { [weak self] _ in
+            Task { @MainActor in
+                self?.flushAirMouseMove()
+            }
+        }
+        RunLoop.main.add(airMouseSendTimer!, forMode: .common)
+    }
+
+    private func flushAirMouseMove() {
+        let dx = smoothedAirMouseDX.clamped(to: -maxAirMouseStep...maxAirMouseStep)
+        let dy = smoothedAirMouseDY.clamped(to: -maxAirMouseStep...maxAirMouseStep)
+        guard abs(dx) >= 0.5 || abs(dy) >= 0.5 else { return }
+        sendAirMouseMove(dx: dx, dy: dy)
     }
 
     private func handleStateChange(_ state: TransportConnectionState) {
@@ -267,5 +481,16 @@ final class PhoneControllerModel: ObservableObject {
         case .failed(let message):
             statusText = message
         }
+    }
+}
+
+private extension Double {
+    func clamped(to range: ClosedRange<Double>) -> Double {
+        min(max(self, range.lowerBound), range.upperBound)
+    }
+
+    func removingDeadzone(_ deadzone: Double) -> Double {
+        guard abs(self) > deadzone else { return 0 }
+        return self > 0 ? self - deadzone : self + deadzone
     }
 }

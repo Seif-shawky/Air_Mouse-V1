@@ -18,6 +18,8 @@
 	<string>MousePhone</string>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>MousePhone uses your local network to find and control your Mac.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>MousePhone uses iPhone motion sensors to move the Mac cursor in Air Mouse mode.</string>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_mousephone._tcp</string>

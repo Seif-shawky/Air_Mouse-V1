@@ -9,6 +9,8 @@ final class MultipeerControllerTransport: NSObject, Transport {
     private let peerID = MCPeerID(displayName: UIDevice.current.name)
     private lazy var session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
     private var browser: MCNearbyServiceBrowser?
+    private let sendQueue = DispatchQueue(label: "MousePhone.MultipeerControllerTransport.send")
+    private var isSendingUnreliable = false
 
     private(set) var state: TransportConnectionState = .idle {
         didSet { onStateChange?(state) }
@@ -38,8 +40,33 @@ final class MultipeerControllerTransport: NSObject, Transport {
     }
 
     func send(_ message: ControlMessage) {
+        send(message, mode: .unreliable)
+    }
+
+    func sendReliably(_ message: ControlMessage) {
+        send(message, mode: .reliable)
+    }
+
+    private func send(_ message: ControlMessage, mode: MCSessionSendDataMode) {
         guard !session.connectedPeers.isEmpty, let data = try? message.encoded() else { return }
-        try? session.send(data, toPeers: session.connectedPeers, with: .unreliable)
+        let peers = session.connectedPeers
+
+        if mode == .unreliable {
+            guard !isSendingUnreliable else { return }
+            isSendingUnreliable = true
+        }
+
+        sendQueue.async { [weak self, session] in
+            try? session.send(data, toPeers: peers, with: mode)
+
+            if mode == .unreliable {
+                DispatchQueue.main.async {
+                    Task { @MainActor in
+                        self?.isSendingUnreliable = false
+                    }
+                }
+            }
+        }
     }
 }
 

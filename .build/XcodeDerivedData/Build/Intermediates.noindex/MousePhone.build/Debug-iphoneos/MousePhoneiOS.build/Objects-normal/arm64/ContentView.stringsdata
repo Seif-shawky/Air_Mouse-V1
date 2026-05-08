@@ -4,10 +4,18 @@
     "Localizable": [
       {
         "comment": "",
+        "key": "Input mode",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
         "key": "Stop connection",
         "location": {
           "startingColumn": 55,
-          "startingLine": 45
+          "startingLine": 78
         }
       },
       {
@@ -15,7 +23,7 @@
         "key": "Start connection",
         "location": {
           "startingColumn": 75,
-          "startingLine": 45
+          "startingLine": 78
         }
       },
       {
@@ -23,7 +31,39 @@
         "key": "MousePhone",
         "location": {
           "startingColumn": 26,
-          "startingLine": 30
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Air Mouse",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "Calibrate",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "Left Click",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "Right Click",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 140
         }
       },
       {
@@ -31,7 +71,7 @@
         "key": "Touchpad",
         "location": {
           "startingColumn": 22,
-          "startingLine": 84
+          "startingLine": 178
         }
       }
     ]

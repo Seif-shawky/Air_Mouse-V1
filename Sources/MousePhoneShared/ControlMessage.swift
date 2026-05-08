@@ -23,6 +23,7 @@ public struct PairingPayload: Codable, Equatable, Sendable {
 
 public enum ControlMessage: Codable, Equatable, Sendable {
     case pointerMove(dx: Double, dy: Double)
+    case airMouseMove(dx: Double, dy: Double)
     case click(button: PointerButton, phase: ClickPhase)
     case scroll(dx: Double, dy: Double)
     case volume(delta: Int)

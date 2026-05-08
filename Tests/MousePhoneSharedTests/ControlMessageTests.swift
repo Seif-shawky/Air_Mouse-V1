@@ -4,6 +4,7 @@ import Testing
 @Test func controlMessagesRoundTripThroughJSON() throws {
     let messages: [ControlMessage] = [
         .pointerMove(dx: 12.5, dy: -4),
+        .airMouseMove(dx: 7.25, dy: -3.5),
         .click(button: .left, phase: .single),
         .scroll(dx: 0, dy: 24),
         .volume(delta: -1),

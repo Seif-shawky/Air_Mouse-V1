@@ -44,10 +44,18 @@
       },
       {
         "comment": "",
+        "key": "Test Click",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
         "key": "Stop Receiver",
         "location": {
           "startingColumn": 42,
-          "startingLine": 53
+          "startingLine": 58
         }
       },
       {
@@ -55,7 +63,7 @@
         "key": "Start Receiver",
         "location": {
           "startingColumn": 60,
-          "startingLine": 53
+          "startingLine": 58
         }
       },
       {
@@ -63,7 +71,7 @@
         "key": "Refresh Permission",
         "location": {
           "startingColumn": 24,
-          "startingLine": 58
+          "startingLine": 63
         }
       }
     ]

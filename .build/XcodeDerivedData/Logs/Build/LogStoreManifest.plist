@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>B5F5B6C5-999C-4ED5-BDDD-975D9DBF3BDD</key>
+		<key>2000C58E-423B-4254-9EDF-E211C1101BFB</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B5F5B6C5-999C-4ED5-BDDD-975D9DBF3BDD.xcactivitylog</string>
+			<string>2000C58E-423B-4254-9EDF-E211C1101BFB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +40,13 @@
 			<key>signature</key>
 			<string>Building project MousePhone with scheme MousePhoneMac and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>799850177.21522701</real>
+			<real>799951005.53097498</real>
 			<key>timeStoppedRecording</key>
-			<real>799850179.63838196</real>
+			<real>799951009.20944405</real>
 			<key>title</key>
 			<string>Building project MousePhone with scheme MousePhoneMac and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>B5F5B6C5-999C-4ED5-BDDD-975D9DBF3BDD</string>
+			<string>2000C58E-423B-4254-9EDF-E211C1101BFB</string>
 		</dict>
 	</dict>
 </dict>

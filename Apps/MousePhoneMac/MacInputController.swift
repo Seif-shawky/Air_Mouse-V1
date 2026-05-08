@@ -15,19 +15,22 @@ final class MacInputController {
         postMouseEvent(type: .mouseMoved, at: next, button: .left)
     }
 
-    func click(button: PointerButton, phase: ClickPhase) {
-        guard let location = currentPointerLocation else { return }
+    @discardableResult
+    func click(button: PointerButton, phase: ClickPhase) -> Bool {
+        guard let location = currentPointerLocation else { return false }
         let cgButton: CGMouseButton = button == .left ? .left : .right
 
         switch phase {
         case .single:
-            postClickEvent(type: downType(for: button), at: location, button: cgButton)
+            guard postClickEvent(type: downType(for: button), at: location, button: cgButton) else {
+                return false
+            }
             usleep(12_000)
-            postClickEvent(type: upType(for: button), at: location, button: cgButton)
+            return postClickEvent(type: upType(for: button), at: location, button: cgButton)
         case .down:
-            postClickEvent(type: downType(for: button), at: location, button: cgButton)
+            return postClickEvent(type: downType(for: button), at: location, button: cgButton)
         case .up:
-            postClickEvent(type: upType(for: button), at: location, button: cgButton)
+            return postClickEvent(type: upType(for: button), at: location, button: cgButton)
         }
     }
 
@@ -56,15 +59,16 @@ final class MacInputController {
             .post(tap: .cghidEventTap)
     }
 
-    private func postClickEvent(type: CGEventType, at point: CGPoint, button: CGMouseButton) {
-        let source = CGEventSource(stateID: .hidSystemState)
+    private func postClickEvent(type: CGEventType, at point: CGPoint, button: CGMouseButton) -> Bool {
+        let source = CGEventSource(stateID: .combinedSessionState) ?? CGEventSource(stateID: .hidSystemState)
         guard let event = CGEvent(mouseEventSource: source, mouseType: type, mouseCursorPosition: point, mouseButton: button) else {
-            return
+            return false
         }
 
         event.setIntegerValueField(.mouseEventButtonNumber, value: Int64(button.rawValue))
         event.setIntegerValueField(.mouseEventClickState, value: 1)
         event.post(tap: .cghidEventTap)
+        return true
     }
 
     private var currentPointerLocation: CGPoint? {

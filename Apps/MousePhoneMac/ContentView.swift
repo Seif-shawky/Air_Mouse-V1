@@ -50,6 +50,11 @@ struct ContentView: View {
                 }
                 .buttonStyle(.bordered)
 
+                Button("Test Click") {
+                    model.testClick()
+                }
+                .buttonStyle(.bordered)
+
                 Button(model.isRunning ? "Stop Receiver" : "Start Receiver") {
                     model.toggleReceiver()
                 }
@@ -124,6 +129,19 @@ final class MacReceiverModel: ObservableObject {
         lastInputText = hasAccessibilityAccess ? "Local move test sent" : "Local move test sent despite Accessibility warning"
     }
 
+    func testClick() {
+        refreshAccessibilityStatus()
+        guard hasAccessibilityAccess else {
+            AccessibilityController.requestAccess()
+            refreshAccessibilityStatus()
+            lastInputText = "Click blocked: enable Accessibility access"
+            return
+        }
+
+        let clicked = inputController.click(button: .left, phase: .single)
+        lastInputText = clicked ? "Local click sent" : "Local click failed"
+    }
+
     private func handleStateChange(_ state: TransportConnectionState) {
         switch state {
         case .idle:
@@ -148,9 +166,19 @@ final class MacReceiverModel: ObservableObject {
         case .pointerMove(let dx, let dy):
             lastInputText = "Move dx \(Int(dx)), dy \(Int(dy))"
             inputController.movePointer(dx: dx, dy: dy)
+        case .airMouseMove(let dx, let dy):
+            lastInputText = "Air mouse dx \(Int(dx)), dy \(Int(dy))"
+            inputController.movePointer(dx: dx, dy: dy)
         case .click(let button, let phase):
-            lastInputText = "\(button.rawValue.capitalized) click \(phase.rawValue)"
-            inputController.click(button: button, phase: phase)
+            guard hasAccessibilityAccess else {
+                AccessibilityController.requestAccess()
+                refreshAccessibilityStatus()
+                lastInputText = "\(button.rawValue.capitalized) click blocked: enable Accessibility access"
+                return
+            }
+
+            let clicked = inputController.click(button: button, phase: phase)
+            lastInputText = clicked ? "\(button.rawValue.capitalized) click \(phase.rawValue)" : "\(button.rawValue.capitalized) click failed"
         case .scroll(let dx, let dy):
             lastInputText = "Scroll dx \(Int(dx)), dy \(Int(dy))"
             inputController.scroll(dx: dx, dy: dy)

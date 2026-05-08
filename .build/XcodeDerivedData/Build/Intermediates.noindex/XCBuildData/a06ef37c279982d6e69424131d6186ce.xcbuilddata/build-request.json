@@ -6,7 +6,7 @@
   },
   "configuredTargets" : [
     {
-      "guid" : "8a1411b9fe9397830dde9530000d0bd4941d8faee7a9fe260ae8033368e2ab82"
+      "guid" : "8a1411b9fe9397830dde9530000d0bd4932c492724929dff532f3029a340b4f3"
     }
   ],
   "containerPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/MousePhone.xcodeproj",
@@ -16,24 +16,18 @@
   "hideShellScriptEnvironment" : false,
   "parameters" : {
     "action" : "build",
-    "activeArchitecture" : "undefined_arch",
+    "activeArchitecture" : "arm64",
     "activeRunDestination" : {
-      "disableOnlyActiveArch" : true,
-      "platform" : "iphoneos",
-      "sdk" : "iphoneos26.1",
-      "sdkVariant" : "iphoneos",
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx26.1",
+      "sdkVariant" : "macos",
       "supportedArchitectures" : [
-        "armv4t",
-        "armv5",
-        "armv6",
-        "armv7",
-        "armv7f",
-        "armv7s",
-        "armv7k",
+        "arm64e",
         "arm64",
-        "arm64e"
+        "x86_64"
       ],
-      "targetArchitecture" : "undefined_arch"
+      "targetArchitecture" : "arm64"
     },
     "arenaInfo" : {
       "buildIntermediatesPath" : "/Users/seifshawky/seif_projects/Mouse_Proj/.build/XcodeDerivedData/Build/Intermediates.noindex",
@@ -54,8 +48,6 @@
       "synthesized" : {
         "table" : {
           "ACTION" : "build",
-          "COLOR_DIAGNOSTICS" : "YES",
-          "diagnostic_message_length" : "100",
           "ENABLE_PREVIEWS" : "NO",
           "ENABLE_XOJIT_PREVIEWS" : "YES",
           "ONLY_ACTIVE_ARCH" : "YES"
